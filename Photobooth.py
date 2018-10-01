@@ -102,7 +102,7 @@ class Window(Frame):
 
 
         if errors:
-            errors.insert(0,'Errors:')
+            errors.insert(0,'Errors: ')
             v = StringVar()
             e = Label(self.master, textvariable=v, font=("Helvetica", 15), bg='black',
                                    fg='red'
