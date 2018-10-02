@@ -11,6 +11,7 @@ import threading
 import datetime
 import glob
 import shutil
+import flickrapi.sockutil
 
 no_gpio = False
 
@@ -20,14 +21,14 @@ try:
     import RPi.GPIO as GPIO
 except:
     no_gpio = True
-    errors.append('No RaspberryPi')
+    errors.append('No GPIO pens')
 
 try:
     import config
 except:
     errors.append('No config.py file found')
 
-import flickrapi.sockutil
+
 
 button_pin = config.button_pin
 led_pin = config.led_pin
