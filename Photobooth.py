@@ -21,7 +21,7 @@ try:
     import RPi.GPIO as GPIO
 except:
     no_gpio = True
-    errors.append('No GPIO pens')
+    errors.append('No GPIO pins found.')
 
 try:
     import config
